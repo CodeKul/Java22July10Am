@@ -23,6 +23,10 @@ public class Calci {
         System.out.println("div : "+(10/20));
     }
 
+    static {
+        System.out.println("Inside static block");
+    }
+
     public static void main(String[] args) {
         Calci calci=new Calci();//syntax to initialise  object
         calci.div();
