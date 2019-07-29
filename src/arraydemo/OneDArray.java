@@ -8,7 +8,7 @@ public class OneDArray {
 
         int array1[]={1,2,3,4,5};
 
-        int[] array2=new int[5];
+        int[] array2=new int[1];
 
         char[] ctr={'a','b','c','d','e'};
         String[] str={"abcd","xyz","pqr"};
@@ -18,7 +18,7 @@ public class OneDArray {
         array[2]=3;
         array[3]=4;
 
-        System.out.println("array of 1 index : "+array[1]);
+        System.out.println("array of 1 index : "+array[0]);
 
     }
 
