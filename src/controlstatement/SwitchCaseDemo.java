@@ -12,40 +12,34 @@ public class SwitchCaseDemo {
                 "2. Sub\n" +
                 "3. Div\n" +
                 "4. Mul");
-
         System.out.print("Enter your choice : ");
         Scanner scanner=new Scanner(System.in);
         choice=scanner.nextInt();
+        if (choice<=4) {
+            System.out.print("Enter values of a and b : ");
+            a = scanner.nextInt();
+            b = scanner.nextInt();
+            switch (choice) {
 
-        switch (choice){
-
-            case 1 :
-                System.out.print("Enter values of a and b : ");
-                a=scanner.nextInt();
-                b=scanner.nextInt();
-                System.out.println("add : "+(a+b));
-                break;
-            case 2 :
-                System.out.print("Enter values of a and b : ");
-                a=scanner.nextInt();
-                b=scanner.nextInt();
-                System.out.println("sub : "+(a-b));
-                break;
-            case 3 :
-                System.out.print("Enter values of a and b : ");
-                a=scanner.nextInt();
-                b=scanner.nextInt();
-                System.out.println("div : "+(a/b));
-                break;
-            case 4 :
-                System.out.print("Enter values of a and b : ");
-                a=scanner.nextInt();
-                b=scanner.nextInt();
-                System.out.println("mul : "+(a*b));
-                break;
+                case 1:
+                    System.out.println("add : " + (a + b));
+                    break;
+                case 2:
+                    System.out.println("sub : " + (a - b));
+                    break;
+                case 3:
+                    System.out.println("div : " + (a / b));
+                    break;
+                case 4:
+                    System.out.println("mul : " + (a * b));
+                    break;
                 default:
                     System.out.println("Invalid choice");
 
+            }
+        }
+        else {
+            System.out.println("Invalid choice");
         }
     }
 }

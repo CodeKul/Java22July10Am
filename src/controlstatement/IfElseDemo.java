@@ -12,7 +12,6 @@ public class IfElseDemo {
         else {
             System.out.println("Odd number");
         }
-
     }
 
     private void checkElseIf(int marks){
