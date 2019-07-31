@@ -10,8 +10,30 @@ public class LoopsDemo {
 
     }
 
+  /*  1 2 3
+    4 5 6
+    7 8 9
+
+    00,01,02
+    10,11,12
+    20,21,22  */
+    static private void nestedFor(){
+
+        for (int i=0;i<3;i++){
+
+            for (int j=0;j<3;j++){
+
+                System.out.print(i+""+j+"\t");
+
+            }
+            System.out.println();
+        }
+
+
+    }
+
     public static void main(String[] args) {
-        forLoop();
+        nestedFor();
     /*    int a=10;
         int b=a++;//a=11 b=10
         int c=(++b)+(a++);//c=22 b=11 a=12
