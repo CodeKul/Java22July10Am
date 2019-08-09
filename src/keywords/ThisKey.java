@@ -8,13 +8,22 @@ public class ThisKey {
     String name;
 
     ThisKey(int id, String name) {
-        this();
         this.id=id;
         this.name=name;
+        System.out.println("two parameters constructor");
+
     }
 
     public ThisKey() {
+        this(10,"codekul");
         System.out.println("inside default const.");
+
+    }
+
+    public ThisKey(int id) {
+        this();
+        this.id = id;
+        System.out.println("Single parameter constructor");
     }
 
     void showData(){
@@ -32,7 +41,7 @@ public class ThisKey {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         System.out.println("Enter the values of id and name : ");
-        ThisKey key = new ThisKey(scanner.nextInt(),scanner.next());
+        ThisKey key = new ThisKey(scanner.nextInt());
         key.showData();
     }
 

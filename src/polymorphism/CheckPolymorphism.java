@@ -6,10 +6,16 @@ public class CheckPolymorphism extends PolymorphismDemo{
         return a+b+100;
     }
 
+    int add(){
+        return 10+20;
+    }
+
     public static void main(String[] args) {
 
         CheckPolymorphism checkPolymorphism=new CheckPolymorphism();
-        System.out.println(checkPolymorphism.add(10,20));
+        System.out.println(
+                checkPolymorphism.add()
+        );
 
     }
 
