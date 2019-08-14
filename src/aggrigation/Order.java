@@ -8,7 +8,7 @@ public class Order {
     int productQuntity;
     double totalAmount;
     double productAmount;
-    static User user;
+    User user;
 
 
 
