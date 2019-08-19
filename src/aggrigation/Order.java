@@ -12,7 +12,9 @@ public class Order {
 
 
 
-    public Order(int id, String orderId, String productName, int productQuntity, double totalAmount, double productAmount, User user) {
+    public Order(int id, String orderId, String productName,
+                 int productQuntity, double totalAmount,
+                 double productAmount, User user) {
         this.id = id;
         this.orderId = orderId;
         this.productName = productName;
