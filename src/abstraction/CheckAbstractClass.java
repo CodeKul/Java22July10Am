@@ -3,7 +3,7 @@ package abstraction;
 public class CheckAbstractClass extends AbstractClass implements InterfaceDemo{
 
     @Override
-    void showData() {
+    public void showData() {
 
     }
 
